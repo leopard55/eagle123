@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * @Title: SortString
+ * @Title: SortString  Lambdaexprssions
  * @Description: TODO
  * @Author: lz
  * @CreateDate: 2020/10/19 16:08
@@ -31,6 +31,10 @@ public class SortString {
         Collections.sort(names, (String a, String b) -> a.compareTo(b));
 
         Collections.sort(names, (a, b) -> a.compareTo(b));
+
+        Collections.sort(names, String::compareTo);
+
+        Collections.sort(names, Comparator.reverseOrder());
 
 
     }
